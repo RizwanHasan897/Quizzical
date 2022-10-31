@@ -41,9 +41,6 @@ body {
 }
 
 body::before {
-    content: "";
-    background-image: url("./assets/blob-top.svg");
-    background-repeat: none;
     position: absolute;
     width: 15rem;
     height: 20rem;
@@ -54,8 +51,6 @@ body::before {
 
 body::after {
     content: "";
-    background-image: url("./assets/blob-bottom.svg");
-    background-repeat: none;
     position: absolute;
     width: 12.55rem;
     height: 6rem;
