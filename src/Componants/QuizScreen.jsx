@@ -34,9 +34,9 @@ export default function QuizScreen(props) {
     const quizContent = props.quizData.map((item, idx) => (
         <QuizItem
             key={idx}
-            question={decode(item.question)}
-            correctAnswer={decode(item.correct_answer)}
-            allAnswers={item.all_answers.map(ans => decode(ans))}
+            question={item.question}
+            correctAnswer={item.correct_answer}
+            allAnswers={item.all_answers.map(ans => ans)}
             selectAnswer={() => selectAnswer(event, idx)}
             completed={completed}
             
